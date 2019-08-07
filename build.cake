@@ -5,9 +5,9 @@
 
 // Environment variables
 var target = Argument("target", EnvironmentVariable("BUILD_TARGET") ?? "Default");
-var buildNumber = EnvironmentVariable("BITRISE_BUILD_NUMBER");
+var buildNumber = EnvironmentVariable("BITRISE_BUILD_NUMBER") ?? "0";
 var nugetApiKey = EnvironmentVariable("NUGET_API_KEY");
-var isStableVersion = !string.IsNullOrEmpty("NUGET_STABLE");
+var isStableVersion = !string.IsNullOrEmpty(EnvironmentVariable("NUGET_STABLE"));
 
 // Targets
 
@@ -25,6 +25,8 @@ Task("Pack")
         {
             buildSettings.VersionSuffix = "ci-" + buildNumber;
         }
+
+        Information("NuGet version suffix: " + buildSettings.VersionSuffix);
         DotNetCoreBuild(".", buildSettings);
     });
 
