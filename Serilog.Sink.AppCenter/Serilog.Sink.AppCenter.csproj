@@ -5,6 +5,12 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>3factr</Authors>
     <Copyright>3factr</Copyright>
+    <Description>AppCenter sink for Serilog</Description>
+    <PackageProjectUrl>https://github.com/3factr/Serilog.Sink.AppCenter</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/3factr/Serilog.Sink.AppCenter</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageVersion>1.0.0</PackageVersion>
   </PropertyGroup>
 
   <ItemGroup>
