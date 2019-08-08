@@ -11,6 +11,7 @@
     <RepositoryUrl>https://github.com/3factr/Serilog.Sink.AppCenter</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <VersionPrefix>1.0.1</VersionPrefix>
+    <PackageIconUrl>https://raw.githubusercontent.com/3factr/Serilog.Sink.AppCenter/master/Icon.png</PackageIconUrl>
   </PropertyGroup>
 
   <ItemGroup>
