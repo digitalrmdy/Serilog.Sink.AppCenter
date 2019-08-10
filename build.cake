@@ -29,7 +29,7 @@ Setup(setupContext =>
     SonarBegin(new SonarBeginSettings
     {
         Login = sonarLogin,
-        Organization = sonarLogin,
+        Organization = sonarOrganization,
         Key = sonarKey,
         Url = sonarHost,
         OpenCoverReportsPath = coveragePath + "*.xml"
