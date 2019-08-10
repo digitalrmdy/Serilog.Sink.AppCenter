@@ -1,4 +1,3 @@
-
 # Created by https://www.gitignore.io/api/rider,csharp,dotnetcore,visualstudio,jetbrains+all,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=rider,csharp,dotnetcore,visualstudio,jetbrains+all,visualstudiocode
 
@@ -661,3 +660,4 @@ modules.xml
 # End of https://www.gitignore.io/api/rider,csharp,dotnetcore,visualstudio,jetbrains+all,visualstudiocode
 build.sh
 tools/
+.sonarqube

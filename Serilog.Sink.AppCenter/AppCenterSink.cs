@@ -40,16 +40,13 @@ namespace Serilog.Sink.AppCenter
 
         public void Emit(LogEvent logEvent)
         {
-            if (logEvent.Exception != null)
+            if (logEvent.Exception != null && Target == AppCenterTarget.ExceptionsAsCrashes || Target == AppCenterTarget.ExceptionsAsCrashesAndEvents)
             {
-                if (Target == AppCenterTarget.ExceptionsAsCrashes || Target == AppCenterTarget.ExceptionsAsCrashesAndEvents)
-                {
-                    TrackCrash(logEvent.Exception, ConvertToProperties(logEvent, true));
+                TrackCrash(logEvent.Exception, ConvertToProperties(logEvent, true));
 
-                    if (Target == AppCenterTarget.ExceptionsAsCrashes)
-                    {
-                        return;
-                    }
+                if (Target == AppCenterTarget.ExceptionsAsCrashes)
+                {
+                    return;
                 }
             }
   
