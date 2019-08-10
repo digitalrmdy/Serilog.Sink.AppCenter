@@ -26,22 +26,28 @@ Setup(setupContext =>
 
     CreateDirectory(coveragePath);
 
-    SonarBegin(new SonarBeginSettings
+    if (!string.IsNullOrEmpty(sonarLogin))
     {
-        Login = sonarLogin,
-        Organization = sonarOrganization,
-        Key = sonarKey,
-        Url = sonarHost,
-        OpenCoverReportsPath = coveragePath + "*.xml"
-    });
+        SonarBegin(new SonarBeginSettings
+        {
+            Login = sonarLogin,
+            Organization = sonarOrganization,
+            Key = sonarKey,
+            Url = sonarHost,
+            OpenCoverReportsPath = coveragePath + "*.xml"
+        });
+    }
 });
 
 Teardown(context =>
 {
-    SonarEnd(new SonarEndSettings
+    if (!string.IsNullOrEmpty(sonarLogin))
     {
-        Login = sonarLogin
-    });
+        SonarEnd(new SonarEndSettings
+        {
+            Login = sonarLogin
+        });
+    }
 });
 
 Task("Test")
