@@ -10,8 +10,9 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/3factr/Serilog.Sink.AppCenter</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <VersionPrefix>1.0.1</VersionPrefix>
     <PackageIconUrl>https://raw.githubusercontent.com/3factr/Serilog.Sink.AppCenter/master/Icon.png</PackageIconUrl>
+    <VersionPrefix>1.1.0</VersionPrefix>
+    <PackageReleaseNotes>Added support for setting minimum log level</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
