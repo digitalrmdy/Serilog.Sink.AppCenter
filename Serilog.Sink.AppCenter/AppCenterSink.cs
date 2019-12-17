@@ -78,8 +78,15 @@ namespace Serilog.Sink.AppCenter
             {
                 using (var stringWriter = new StringWriter())
                 {
-                    property.Value.Render(stringWriter, "l", _formatProvider);
-                    var str = stringWriter.ToString();
+					if (property.Value is ScalarValue sv && sv.Value is string s)
+					{
+						property.Value.Render(stringWriter, "l", _formatProvider);
+					}
+					else
+					{
+						property.Value.Render(stringWriter, null, _formatProvider);
+					}
+					var str = stringWriter.ToString();
                     properties.Add(property.Key, str);
                 }
             });
