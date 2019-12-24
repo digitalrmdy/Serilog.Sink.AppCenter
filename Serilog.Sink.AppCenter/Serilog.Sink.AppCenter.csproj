@@ -11,7 +11,7 @@
     <RepositoryUrl>https://github.com/3factr/Serilog.Sink.AppCenter</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageIconUrl>https://raw.githubusercontent.com/3factr/Serilog.Sink.AppCenter/master/Icon.png</PackageIconUrl>
-    <VersionPrefix>1.1.1</VersionPrefix>
+    <VersionPrefix>1.2.0</VersionPrefix>
     <PackageReleaseNotes>Added support for setting minimum log level</PackageReleaseNotes>
   </PropertyGroup>
 
