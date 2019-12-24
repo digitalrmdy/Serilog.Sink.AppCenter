@@ -11,14 +11,14 @@
     <RepositoryUrl>https://github.com/3factr/Serilog.Sink.AppCenter</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageIconUrl>https://raw.githubusercontent.com/3factr/Serilog.Sink.AppCenter/master/Icon.png</PackageIconUrl>
-    <VersionPrefix>1.1.1</VersionPrefix>
+    <VersionPrefix>1.2.0</VersionPrefix>
     <PackageReleaseNotes>Added support for setting minimum log level</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Serilog" Version="2.8.0" />
-    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="2.1.1" />
-    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="2.6.4" />
+    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="2.6.4" />
   </ItemGroup>
 
 </Project>
