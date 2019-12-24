@@ -9,6 +9,7 @@ AppCenter sink for Serilog
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=3factr_Serilog.Sink.AppCenter&metric=coverage)](https://sonarcloud.io/dashboard?id=3factr_Serilog.Sink.AppCenter)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=3factr_Serilog.Sink.AppCenter&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=3factr_Serilog.Sink.AppCenter)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=3factr_Serilog.Sink.AppCenter&metric=security_rating)](https://sonarcloud.io/dashboard?id=3factr_Serilog.Sink.AppCenter)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=3factr/Serilog.Sink.AppCenter)](https://dependabot.com)
 
 ## Usage
 
