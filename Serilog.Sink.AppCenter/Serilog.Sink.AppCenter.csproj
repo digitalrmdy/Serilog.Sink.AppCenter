@@ -3,15 +3,15 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Authors>3factr</Authors>
-    <Copyright>3factr</Copyright>
+    <Authors>RMDY</Authors>
+    <Copyright>RMDY</Copyright>
     <Description>AppCenter sink for Serilog</Description>
-    <PackageProjectUrl>https://github.com/3factr/Serilog.Sink.AppCenter</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/digitalrmdy/Serilog.Sink.AppCenter</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <RepositoryUrl>https://github.com/3factr/Serilog.Sink.AppCenter</RepositoryUrl>
+    <RepositoryUrl>https://github.com/digitalrmdy/Serilog.Sink.AppCenter</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageIconUrl>https://raw.githubusercontent.com/3factr/Serilog.Sink.AppCenter/master/Icon.png</PackageIconUrl>
-    <VersionPrefix>1.2.0</VersionPrefix>
+    <PackageIconUrl>https://raw.githubusercontent.com/digitalrmdy/Serilog.Sink.AppCenter/master/Icon.png</PackageIconUrl>
+    <VersionPrefix>1.2.1</VersionPrefix>
     <PackageReleaseNotes>Added support for setting minimum log level</PackageReleaseNotes>
   </PropertyGroup>
 
