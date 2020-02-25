@@ -9,7 +9,7 @@ AppCenter sink for Serilog
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=digitalrmdy_Serilog.Sink.AppCenter&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=digitalrmdy_Serilog.Sink.AppCenter)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=digitalrmdy_Serilog.Sink.AppCenter&metric=security_rating)](https://sonarcloud.io/dashboard?id=digitalrmdy_Serilog.Sink.AppCenter)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=digitalrmdy_Serilog.Sink.AppCenter&metric=coverage)](https://sonarcloud.io/dashboard?id=digitalrmdy_Serilog.Sink.AppCenter)
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=3factr/Serilog.Sink.AppCenter)](https://dependabot.com)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=digitalrmdy/Serilog.Sink.AppCenter)](https://dependabot.com)
 
 ## Usage
 
