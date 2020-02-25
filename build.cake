@@ -21,7 +21,7 @@ Setup(setupContext =>
 {
     if (buildNumber != null && !isStableVersion)
     {
-        versionSuffix = "ci-" + buildNumber;
+        versionSuffix = "build." + buildNumber;
     }
 
     CreateDirectory(coveragePath);
