@@ -8,6 +8,7 @@ var buildNumber = EnvironmentVariable("BUILD_NUMBER") ?? "0";
 var nugetApiKey = EnvironmentVariable("NUGET_API_KEY");
 var isStableVersion = !string.IsNullOrEmpty(EnvironmentVariable("NUGET_STABLE"));
 string versionSuffix = null;
+var coveragePath = ".coverage/";
 
 // Targets
 
@@ -18,6 +19,7 @@ Setup(setupContext =>
         versionSuffix = "build." + buildNumber;
     }
 
+    CreateDirectory(coveragePath);
 });
 
 Task("Test")
