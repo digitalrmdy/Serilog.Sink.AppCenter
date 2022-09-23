@@ -1,17 +1,12 @@
 // Addins
 #tool MSBuild.SonarQube.Runner.Tool&version=4.6.0
-#addin Cake.Sonar&version=1.1.22
-#addin Cake.Coverlet&version=2.3.4
+#addin nuget:?package=Cake.Coverlet&version=2.5.4
 
 // Environment variables
 var target = Argument("target", EnvironmentVariable("BUILD_TARGET") ?? "Default");
-var buildNumber = EnvironmentVariable("BITRISE_BUILD_NUMBER") ?? "0";
+var buildNumber = EnvironmentVariable("BUILD_NUMBER") ?? "0";
 var nugetApiKey = EnvironmentVariable("NUGET_API_KEY");
 var isStableVersion = !string.IsNullOrEmpty(EnvironmentVariable("NUGET_STABLE"));
-var sonarLogin = EnvironmentVariable("SONAR_LOGIN");
-var sonarOrganization = EnvironmentVariable("SONAR_ORGANIZATION");
-var sonarKey = EnvironmentVariable("SONAR_KEY");
-var sonarHost = EnvironmentVariable("SONAR_HOST");
 string versionSuffix = null;
 var coveragePath = ".coverage/";
 
@@ -25,29 +20,6 @@ Setup(setupContext =>
     }
 
     CreateDirectory(coveragePath);
-
-    if (!string.IsNullOrEmpty(sonarLogin))
-    {
-        SonarBegin(new SonarBeginSettings
-        {
-            Login = sonarLogin,
-            Organization = sonarOrganization,
-            Key = sonarKey,
-            Url = sonarHost,
-            OpenCoverReportsPath = coveragePath + "*.xml"
-        });
-    }
-});
-
-Teardown(context =>
-{
-    if (!string.IsNullOrEmpty(sonarLogin))
-    {
-        SonarEnd(new SonarEndSettings
-        {
-            Login = sonarLogin
-        });
-    }
 });
 
 Task("Test")

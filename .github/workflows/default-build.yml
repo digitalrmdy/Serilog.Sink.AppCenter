@@ -7,8 +7,10 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     environment: dev
+    env:
+      BUILD_NUMBER: ${{ github.run_number }}
 
     steps:
     - uses: actions/checkout@v3
