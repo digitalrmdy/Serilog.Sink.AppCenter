@@ -1,7 +1,7 @@
 // Addins
 #tool MSBuild.SonarQube.Runner.Tool&version=4.6.0
-#addin Cake.Sonar&version=1.1.22
-#addin Cake.Coverlet&version=2.3.4
+#addin nuget:?package=Cake.Sonar&version=1.1.30
+#addin nuget:?package=Cake.Coverlet&version=2.5.4
 
 // Environment variables
 var target = Argument("target", EnvironmentVariable("BUILD_TARGET") ?? "Default");
