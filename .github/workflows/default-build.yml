@@ -1,4 +1,4 @@
-name: develop-build
+name: default-build
 
 on:
   pull_request:
