@@ -5,7 +5,7 @@
 
 // Environment variables
 var target = Argument("target", EnvironmentVariable("BUILD_TARGET") ?? "Default");
-var buildNumber = EnvironmentVariable("BITRISE_BUILD_NUMBER") ?? "0";
+var buildNumber = EnvironmentVariable("BUILD_NUMBER") ?? "0";
 var nugetApiKey = EnvironmentVariable("NUGET_API_KEY");
 var isStableVersion = !string.IsNullOrEmpty(EnvironmentVariable("NUGET_STABLE"));
 var sonarLogin = EnvironmentVariable("SONAR_LOGIN");

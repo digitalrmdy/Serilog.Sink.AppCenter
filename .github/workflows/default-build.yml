@@ -9,6 +9,12 @@ jobs:
 
     runs-on: ubuntu-latest
     environment: dev
+    env:
+      SONAR_HOST: ${{ secrets.SONAR_HOST }}
+      SONAR_KEY: ${{ secrets.SONAR_KEY }}
+      SONAR_LOGIN: ${{ secrets.SONAR_LOGIN }}
+      SONAR_ORGANIZATION: ${{ secrets.SONAR_ORGANIZATION }}
+      BUILD_NUMBER: ${{ github.run_number }}
 
     steps:
     - uses: actions/checkout@v3
