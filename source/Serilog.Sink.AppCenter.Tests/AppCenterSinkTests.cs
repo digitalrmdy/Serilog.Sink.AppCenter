@@ -16,8 +16,8 @@ namespace Serilog.Sink.AppCenter.Tests
 			// Arrange
 			var testableAppCenterSink = new TestableAppCenterSink();
 			using (var logger = new LoggerConfiguration()
-				.WriteTo.Sink(testableAppCenterSink)
-				.CreateLogger())
+				       .WriteTo.Sink(testableAppCenterSink)
+				       .CreateLogger())
 			{
 				// Act
 				logger.Write(level, "test");
@@ -39,8 +39,8 @@ namespace Serilog.Sink.AppCenter.Tests
 
 			var testableAppCenterSink = new TestableAppCenterSink();
 			using (var logger = new LoggerConfiguration()
-				.WriteTo.Sink(testableAppCenterSink)
-				.CreateLogger())
+				       .WriteTo.Sink(testableAppCenterSink)
+				       .CreateLogger())
 			{
 				// Act
 				logger.Information(logMessage, subject);
@@ -58,8 +58,8 @@ namespace Serilog.Sink.AppCenter.Tests
 			// Arrange
 			var testableAppCenterSink = new TestableAppCenterSink(AppCenterTarget.ExceptionsAsCrashes);
 			using (var logger = new LoggerConfiguration()
-				.WriteTo.Sink(testableAppCenterSink)
-				.CreateLogger())
+				       .WriteTo.Sink(testableAppCenterSink)
+				       .CreateLogger())
 			{
 				// Act
 				logger.Information(new Exception("test"), "test");
@@ -76,8 +76,8 @@ namespace Serilog.Sink.AppCenter.Tests
 			// Arrange
 			var testableAppCenterSink = new TestableAppCenterSink(AppCenterTarget.ExceptionsAsEvents);
 			using (var logger = new LoggerConfiguration()
-				.WriteTo.Sink(testableAppCenterSink)
-				.CreateLogger())
+				       .WriteTo.Sink(testableAppCenterSink)
+				       .CreateLogger())
 			{
 				// Act
 				logger.Information(new Exception("test"), "test");
@@ -94,8 +94,8 @@ namespace Serilog.Sink.AppCenter.Tests
 			// Arrange
 			var testableAppCenterSink = new TestableAppCenterSink(AppCenterTarget.ExceptionsAsCrashesAndEvents);
 			using (var logger = new LoggerConfiguration()
-				.WriteTo.Sink(testableAppCenterSink)
-				.CreateLogger())
+				       .WriteTo.Sink(testableAppCenterSink)
+				       .CreateLogger())
 			{
 				// Act
 				logger.Information(new Exception("test"), "test");
@@ -114,8 +114,8 @@ namespace Serilog.Sink.AppCenter.Tests
 			// Arrange
 			var testableAppCenterSink = new TestableAppCenterSink();
 			using (var logger = new LoggerConfiguration()
-				.WriteTo.Sink(testableAppCenterSink)
-				.CreateLogger())
+				       .WriteTo.Sink(testableAppCenterSink)
+				       .CreateLogger())
 			{
 				// Act
 				logger.Information(new Exception("test"), messageSample);
@@ -134,8 +134,8 @@ namespace Serilog.Sink.AppCenter.Tests
 			// Arrange
 			var testableAppCenterSink = new TestableAppCenterSink();
 			using (var logger = new LoggerConfiguration()
-				.WriteTo.Sink(testableAppCenterSink)
-				.CreateLogger())
+				       .WriteTo.Sink(testableAppCenterSink)
+				       .CreateLogger())
 			{
 				// Act
 				logger.Information(new Exception(exceptionMessage), "test");

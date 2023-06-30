@@ -1,9 +1,9 @@
 ﻿namespace Serilog.Sink.AppCenter
 {
-    public enum AppCenterTarget
-    {
-        ExceptionsAsCrashes,
-        ExceptionsAsCrashesAndEvents,
-        ExceptionsAsEvents
-    }
+	public enum AppCenterTarget
+	{
+		ExceptionsAsCrashes,
+		ExceptionsAsCrashesAndEvents,
+		ExceptionsAsEvents
+	}
 }
