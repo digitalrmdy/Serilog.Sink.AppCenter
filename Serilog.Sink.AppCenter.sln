@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serilog.Sink.AppCenter", "s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serilog.Sink.AppCenter.Tests", "source\Serilog.Sink.AppCenter.Tests\Serilog.Sink.AppCenter.Tests.csproj", "{7A05B15B-5CF2-41B4-B91D-A9DD04FCC424}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{3A9E68B9-490E-4B79-9EC5-AB5E73195C49}"
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -20,6 +22,8 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A9E68B9-490E-4B79-9EC5-AB5E73195C49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A9E68B9-490E-4B79-9EC5-AB5E73195C49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2ECA2D65-4D77-4524-9DF5-7BF5B2FF8CB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2ECA2D65-4D77-4524-9DF5-7BF5B2FF8CB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2ECA2D65-4D77-4524-9DF5-7BF5B2FF8CB6}.Debug|x64.ActiveCfg = Debug|Any CPU
