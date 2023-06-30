@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serilog.Sink.AppCenter", "Serilog.Sink.AppCenter\Serilog.Sink.AppCenter.csproj", "{2ECA2D65-4D77-4524-9DF5-7BF5B2FF8CB6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serilog.Sink.AppCenter", "source\Serilog.Sink.AppCenter\Serilog.Sink.AppCenter.csproj", "{2ECA2D65-4D77-4524-9DF5-7BF5B2FF8CB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serilog.Sink.AppCenter.Tests", "Serilog.Sink.AppCenter.Tests\Serilog.Sink.AppCenter.Tests.csproj", "{7A05B15B-5CF2-41B4-B91D-A9DD04FCC424}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serilog.Sink.AppCenter.Tests", "source\Serilog.Sink.AppCenter.Tests\Serilog.Sink.AppCenter.Tests.csproj", "{7A05B15B-5CF2-41B4-B91D-A9DD04FCC424}"
 EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
