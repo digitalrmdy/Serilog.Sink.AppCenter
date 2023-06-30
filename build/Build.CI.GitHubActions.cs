@@ -19,7 +19,7 @@ using Nuke.Common.CI.GitHubActions;
 	EnableGitHubToken = false,
 	FetchDepth = 0, // Only a single commit is fetched by default, for the ref/SHA that triggered the workflow. Make sure to fetch whole git history, in order to get GitVersion to work.
 	InvokedTargets = new[] { nameof(Pack) },
-	OnPullRequestBranches = new[] { "main", "develop" },
+	OnPushBranches = new[] { "main", "develop" },
 	PublishArtifacts = true)]
 [GitHubActions(
 	"publish",
