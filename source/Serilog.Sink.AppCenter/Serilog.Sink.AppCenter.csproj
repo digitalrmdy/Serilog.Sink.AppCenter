@@ -1,28 +1,30 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Authors>RMDY</Authors>
-    <Copyright>RMDY</Copyright>
-    <Description>AppCenter sink for Serilog</Description>
-    <PackageProjectUrl>https://github.com/digitalrmdy/Serilog.Sink.AppCenter</PackageProjectUrl>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <RepositoryUrl>https://github.com/digitalrmdy/Serilog.Sink.AppCenter</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-    <PackageIcon>Icon.png</PackageIcon>
-    <VersionPrefix>1.4.0</VersionPrefix>
-    <PackageReleaseNotes>Updated Dependencies</PackageReleaseNotes>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<LangVersion>latest</LangVersion>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Serilog" Version="2.12.0" />
-    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="5.0.2" />
-    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="5.0.2" />
-  </ItemGroup>
+	<PropertyGroup>
+		<Authors>RMDY</Authors>
+		<Copyright>RMDY</Copyright>
+		<Description>AppCenter sink for Serilog</Description>
+		<PackageIcon>Icon.png</PackageIcon>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/digitalrmdy/Serilog.Sink.AppCenter</PackageProjectUrl>
+		<PackageReleaseNotes>Updated Dependencies</PackageReleaseNotes>
+		<RepositoryUrl>https://github.com/digitalrmdy/Serilog.Sink.AppCenter</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <None Include="..\Icon.png" Pack="true" PackagePath="\" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Serilog" Version="2.12.0"/>
+		<PackageReference Include="Microsoft.AppCenter.Analytics" Version="5.0.2"/>
+		<PackageReference Include="Microsoft.AppCenter.Crashes" Version="5.0.2"/>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\..\Icon.png" Pack="true" PackagePath="\"/>
+	</ItemGroup>
 
 </Project>
