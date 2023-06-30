@@ -3,8 +3,8 @@
 AppCenter sink for Serilog
 
 [![NuGet Badge](https://buildstats.info/nuget/serilog.sink.appcenter)](https://www.nuget.org/packages/Serilog.Sink.AppCenter/)
-[![develop-build](https://github.com/digitalrmdy/Serilog.Sink.AppCenter/actions/workflows/develop-build.yml/badge.svg)](https://github.com/digitalrmdy/Serilog.Sink.AppCenter/actions/workflows/develop-build.yml)
-[![main-build](https://github.com/digitalrmdy/Serilog.Sink.AppCenter/actions/workflows/main-build.yml/badge.svg)](https://github.com/digitalrmdy/Serilog.Sink.AppCenter/actions/workflows/main-build.yml)
+[![Develop](https://github.com/digitalrmdy/Serilog.Sink.AppCenter/actions/workflows/push.yml/badge.svg?branch=develop)](https://github.com/digitalrmdy/Serilog.Sink.AppCenter/actions/workflows/push.yml)
+[![Publish](https://github.com/digitalrmdy/Serilog.Sink.AppCenter/actions/workflows/publish.yml/badge.svg)](https://github.com/digitalrmdy/Serilog.Sink.AppCenter/actions/workflows/publish.yml)
 ## Usage
 
 ```
